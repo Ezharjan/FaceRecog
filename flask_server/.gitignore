@@ -1,0 +1,8 @@
+# Cache files
+.vs
+.vscode
+.idea
+__pycache__
+
+# Model files --- important but must be ignored in repositry as their volumn is high
+models

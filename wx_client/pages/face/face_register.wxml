@@ -1,0 +1,26 @@
+<view class="view">
+  <view class="window">
+    <canvas  class="myCanvas" canvas-id="myCanvas" style="border: 1px solid;"/>
+    <camera class="camera" device-position="front" wx:if="{{camera}}" flash="off"> </camera>
+  </view>
+  <view class="btn_all">
+      <view class='btn_open'>
+        <button bindtap="open" type="primary" data-type="takePhoto">采集人脸</button>
+      </view>
+      <view class='btn_close'>
+        <button bindtap="register" type="primary" data-type="endPhoto">注册人脸</button>
+      </view>    
+  </view>
+
+  <view class='face_pos'>
+    <text>人脸注册结果：{{register_res}}</text>
+  </view>
+
+</view>
+
+
+<canvas canvas-id="attendCanvasId" style="width:100%;height:50%;position: absolute;left:-300px;top:-300px"></canvas>
+ 
+ 
+ 
+ 

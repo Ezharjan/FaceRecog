@@ -1,0 +1,24 @@
+/* pages/face/face_recognition.wxss */
+.btn_all{
+  color: white;
+  border-radius: 10px;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin-top:10%
+}
+
+.btn_register{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+}
+.btn_login{
+  width: 40%;
+  margin-right: 5%;
+  float: right;
+}
