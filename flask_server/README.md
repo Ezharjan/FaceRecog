@@ -8,4 +8,4 @@
 
 
 
-备注:原代码在版本上具有很多不兼容性问题，其中一处涉及 --- TypeError: required field "type_ignores" missing from Module --- 的问题， 鉴于此，本人参考的具体解决方式来源于https://www.jianshu.com/p/95588bf4e63d 。 除此之外仍有许多地方会弹出兼容性问题，如果是具体的某个函数，则可以搜索这个函数的在新版本上的用法，或者直接在原来tf的调用方式后面加上compat.v1.即可解决，本项目中使用的方案也是这种解决方式。
+**备注**:原代码在版本上具有很多不兼容性问题，其中一处涉及 --- TypeError: required field "type_ignores" missing from Module --- 的问题， 鉴于此，本人参考的具体解决方式来源于https://www.jianshu.com/p/95588bf4e63d 。 除此之外仍有许多地方会弹出兼容性问题，如果是具体的某个函数，则可以搜索这个函数的在新版本上的用法，或者直接在原来tf的调用方式后面加上compat.v1.即可解决，本项目中使用的方案也是这种解决方式。
