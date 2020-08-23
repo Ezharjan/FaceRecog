@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '答辩必胜!',
+    motto: '北京工业大学软件学院',
   },
   go_main: function(param){
     wx.navigateTo({

@@ -1,3 +1,5 @@
+from wsgiref.simple_server import make_server
+
 from flask import Flask, request
 import cv2
 import os
@@ -150,8 +152,10 @@ def face_register():
     x1, y1, x2, y2 = face_tools.detection_face_by_tf(im_data)
 
     if x1 is None:
+        print("x1 is Node!!!")
         return "fail"
     else:
+        print("Registeration OK!!!")
         y1 = int(y1 * sp[0])
         x1 = int(x1 * sp[1])
         y2 = int(y2 * sp[0])
@@ -186,8 +190,10 @@ def face_login():
     x1, y1, x2, y2 = face_tools.detection_face_by_tf(im_data)
 
     if x1 is None:
+        print("x1 is Node!!!")
         return "fail"
     else:
+        print("Login OK!!!")
         y1 = int(y1 * sp[0])
         x1 = int(x1 * sp[1])
         y2 = int(y2 * sp[0])
@@ -234,4 +240,7 @@ def face_attribute():
 
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=90, debug=False)
+    # app.run(host="127.0.0.1", port=90, debug=False)
+    server = make_server('127.0.0.1', 90, app)
+    server.serve_forever()
+    app.run()
